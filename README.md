@@ -16,7 +16,7 @@ Siga os passos abaixo para executar o script de instalação:
    Primeiro, clone o repositório para o seu computador:
 
    ```bash
-   git clone https://github.com/SEU_USUARIO/install-scripts.git
+   git clone https://github.com/dev-gabrieljs/install-scripts.git
 # Instruções de Instalação e Configuração
 
 Substitua `SEU_USUARIO` pelo seu nome de usuário do GitHub.
