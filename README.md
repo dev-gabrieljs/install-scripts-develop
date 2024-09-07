@@ -93,25 +93,4 @@ sudo ./install.sh
 
 Contribuições são bem-vindas! Se você deseja contribuir para este repositório, sinta-se à vontade para fazer um fork, criar uma branch para suas alterações e enviar pull requests com melhorias ou correções.
 
-## Licença
-
-Este projeto é licenciado sob a MIT License.
-
-## Adicionando o README.md ao Repositório
-
-Para adicionar este `README.md` ao seu repositório, siga os passos abaixo:
-
-### Crie o Arquivo README.md
-
-No diretório do seu repositório clonado, crie um arquivo chamado `README.md` e cole o conteúdo deste documento nele.
-
-### Adicione, Commit e Faça o Push das Alterações
-
-Execute os seguintes comandos:
-
-```bash
-git add README.md
-git commit -m "Adiciona README com instruções de execução"
-git push origin main
-```
 
