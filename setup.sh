@@ -14,17 +14,36 @@ source ~/.bashrc
 # Verificar a instalação do Java
 java -version
 
+# Instalar o Snap se não estiver instalado
+if ! command -v snap &> /dev/null; then
+    echo "Snap não encontrado. Instalando o Snap..."
+    sudo apt install snapd -y
+    # Habilitar e iniciar o serviço Snap
+    sudo systemctl enable snapd
+    sudo systemctl start snapd
+else
+    echo "Snap já está instalado."
+fi
+
+
+# Instalar o Git
+sudo apt install git -y
+
+# Verificar a instalação do Git
+git --version
+
+# Instalar o Maven
+sudo apt install maven -y
+
+# Verificar a instalação do Maven
+mvn -version
+
 # Instalar o PostgreSQL
 sudo apt install postgresql postgresql-contrib -y
 
 # Iniciar o serviço do PostgreSQL e habilitá-lo para iniciar com o sistema
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
-
-# Criar um usuário e banco de dados PostgreSQL (substitua 'seu_usuario' e 'sua_senha' conforme necessário)
-sudo -u postgres psql -c "CREATE USER seu_usuario WITH PASSWORD 'sua_senha';"
-sudo -u postgres psql -c "CREATE DATABASE seu_banco;"
-sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE seu_banco TO seu_usuario;"
 
 # Instalar Visual Studio Code usando Snap
 sudo snap install code --classic
@@ -68,6 +87,9 @@ Comment=Desenvolvimento em Java com IntelliJ IDEA
 Categories=Development;IDE;
 Terminal=false
 EOF
+
+# Permissão para executar o IntelliJ IDEA
+sudo chmod +x /usr/local/bin/idea
 
 # Instalação concluída
 echo "Instalação e configuração concluídas com sucesso!"
