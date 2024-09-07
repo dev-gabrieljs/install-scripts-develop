@@ -20,7 +20,6 @@ O script irá instalar as seguintes ferramentas:
 - **Git:** Sistema de controle de versões distribuído.
 - **Maven:** Ferramenta de gerenciamento e automação de projetos Java.
 
-## Como Executar o Script
 
 Siga os passos abaixo para executar o script de instalação:
 
@@ -33,6 +32,19 @@ Primeiro, clone o repositório para o seu computador usando o comando abaixo.
 git clone https://github.com/dev-gabrieljs/install-scripts.git
 
 ```
+#### Caso não esteja com git instalado
+
+Você pode baixar o repositório como um arquivo ZIP clicando no botão **"Code"** no e selecionando **"Download ZIP"**. Após o download, descompacte o arquivo ZIP no diretório desejado.
+Para extrair um arquivo ZIP no Linux, você pode usar o comando `unzip`. Aqui está o comando geral para extrair um arquivo ZIP:
+
+```bash
+unzip nome-do-arquivo.zip
+```
+Se o comando `unzip` não estiver instalado no seu sistema, você pode instalá-lo com o seguinte comando:
+
+```bash
+sudo apt-get install unzip
+````
 
 ## Como Executar o Script
 
