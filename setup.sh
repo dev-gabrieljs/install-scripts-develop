@@ -4,12 +4,17 @@
 sudo apt update && sudo apt upgrade -y
 
 # Instalar o Java (OpenJDK 17)
-sudo apt install openjdk-17-jdk -y
 
-# Configurar variáveis de ambiente do Java
-echo "export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64" >> ~/.bashrc
-echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bashrc
-source ~/.bashrc
+if ! java -version &> /dev/null; then
+    echo "Java não encontrado. Instalando o OpenJDK 17..."
+    sudo apt install openjdk-17-jdk -y
+    # Configurar variáveis de ambiente
+    echo "export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64" >> ~/.bashrc
+    echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bashrc
+    source ~/.bashrc
+else
+    echo "Java já está instalado."
+fi
 
 # Verificar a instalação do Java
 java -version
