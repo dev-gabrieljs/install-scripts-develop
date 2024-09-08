@@ -62,7 +62,7 @@ cd install-scripts
 Antes de executar o script, é necessário garantir que ele tenha permissão de execução:
 
 ```bash
-chmod +x install.sh
+sudo chmod +x install.sh
 ```
 
 ### 4. Execute o Script de Instalação
@@ -70,7 +70,7 @@ chmod +x install.sh
 Execute o script com permissões de superusuário para instalar e configurar todas as ferramentas:
 
 ```bash
-sudo ./install.sh
+./install.sh
 ```
 
 ## O que o Script Faz
