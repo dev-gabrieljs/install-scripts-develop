@@ -1,5 +1,27 @@
 #!/bin/bash
 
+
+#!/bin/bash
+
+# Logotipo "Gabriel Java" no terminal
+echo "  ____              _        _           _   "
+echo " / ___|_ __   __ _| |_ __ _| | __ _ ___| |_ "
+echo "| |  _| '_ \ / _\` | __/ _\` | |/ _\` / __| __|"
+echo "| |_| | | | | (_| | || (_| | | (_| \__ \ |_ "
+echo " \____|_| |_|\__,_|\__\__,_|_|\__,_|___/\__|"
+echo ""
+echo "      _            _        _       _     "
+echo "     | | ___  __ _| |_ __ _| |_ ___ | |_   "
+echo "  _  | |/ _ \/ _\` | __/ _\` | __/ _ \| __|  "
+echo " | |_| |  __/ (_| | || (_| | || (_) | |_   "
+echo "  \___/ \___|\__,_|\__\__,_|\__\___/ \__|  "
+
+# Pausar por 3 segundos para o usuário ver o logotipo
+sleep 5
+
+# Continuar com o restante do script...
+
+
 # Atualizar o sistema
 sudo apt update && sudo apt upgrade -y
 echo "Sistema atualizado com sucesso."
