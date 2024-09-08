@@ -20,6 +20,8 @@ fi
 # Verificar a instalação do Java
 java -version
 
+sleep 3
+
 # Instalar o Snap se não estiver instalado
 if ! command -v snap &> /dev/null; then
     echo "Snap não encontrado. Instalando o Snap..."
@@ -32,12 +34,18 @@ else
     echo "Snap já está instalado."
 fi
 
+sleep 3
+
 # Instalar o Git
 sudo apt install git -y
 echo "Git instalado com sucesso."
 
 # Verificar a instalação do Git
 git --version
+
+
+sleep 3
+
 
 # Instalar o Maven
 sudo apt install maven -y
@@ -46,6 +54,8 @@ echo "Maven instalado com sucesso."
 # Verificar a instalação do Maven
 mvn -version
 
+sleep 3
+
 # Instalar o PostgreSQL
 sudo apt install postgresql postgresql-contrib -y
 # Iniciar o serviço do PostgreSQL e habilitá-lo para iniciar com o sistema
@@ -53,13 +63,19 @@ sudo systemctl start postgresql
 sudo systemctl enable postgresql
 echo "PostgreSQL instalado e configurado com sucesso."
 
+sleep 3
+
 # Instalar Visual Studio Code usando Snap
 sudo snap install code --classic
 echo "Visual Studio Code instalado com sucesso."
 
+sleep 3
+
 # Instalar DBeaver Community usando Snap
 sudo snap install dbeaver-ce
 echo "DBeaver Community instalado com sucesso."
+
+sleep 3
 
 # Baixar IntelliJ IDEA Community Edition
 IDEA_VERSION="2024.1.6"
@@ -73,6 +89,7 @@ TEMP_DIR="/tmp"
 # Fazer download do IntelliJ IDEA
 wget -O $TEMP_DIR/$IDEA_TAR $IDEA_URL
 echo "Download do IntelliJ IDEA concluído."
+
 
 # Criar diretório de instalação
 sudo mkdir -p $IDEA_INSTALL_DIR
@@ -99,6 +116,8 @@ Comment=Desenvolvimento em Java com IntelliJ IDEA
 Categories=Development;IDE;
 Terminal=false
 EOF
+
+sleep 3
 
 # Permissão para executar o IntelliJ IDEA
 sudo chmod +x /usr/local/bin/idea
