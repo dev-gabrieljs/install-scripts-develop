@@ -1,8 +1,6 @@
 #!/bin/bash
 
 
-#!/bin/bash
-
 # Logotipo "Gabriel Java" no terminal
 echo "  ____              _        _           _   "
 echo " / ___|_ __   __ _| |_ __ _| | __ _ ___| |_ "
