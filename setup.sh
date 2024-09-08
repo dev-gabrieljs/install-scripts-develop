@@ -4,6 +4,8 @@
 sudo apt update && sudo apt upgrade -y
 echo "Sistema atualizado com sucesso."
 
+sleep 3
+
 # Instalar o Java (OpenJDK 17)
 if ! java -version &> /dev/null; then
     echo "Java não encontrado. Instalando o OpenJDK 17..."
