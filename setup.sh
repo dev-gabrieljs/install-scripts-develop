@@ -2,9 +2,9 @@
 
 # Atualizar o sistema
 sudo apt update && sudo apt upgrade -y
+echo "Sistema atualizado com sucesso."
 
 # Instalar o Java (OpenJDK 17)
-
 if ! java -version &> /dev/null; then
     echo "Java não encontrado. Instalando o OpenJDK 17..."
     sudo apt install openjdk-17-jdk -y
@@ -12,6 +12,7 @@ if ! java -version &> /dev/null; then
     echo "export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64" >> ~/.bashrc
     echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bashrc
     source ~/.bashrc
+    echo "Java instalado e configurado com sucesso."
 else
     echo "Java já está instalado."
 fi
@@ -26,35 +27,39 @@ if ! command -v snap &> /dev/null; then
     # Habilitar e iniciar o serviço Snap
     sudo systemctl enable snapd
     sudo systemctl start snapd
+    echo "Snap instalado e habilitado com sucesso."
 else
     echo "Snap já está instalado."
 fi
 
-
 # Instalar o Git
 sudo apt install git -y
+echo "Git instalado com sucesso."
 
 # Verificar a instalação do Git
 git --version
 
 # Instalar o Maven
 sudo apt install maven -y
+echo "Maven instalado com sucesso."
 
 # Verificar a instalação do Maven
 mvn -version
 
 # Instalar o PostgreSQL
 sudo apt install postgresql postgresql-contrib -y
-
 # Iniciar o serviço do PostgreSQL e habilitá-lo para iniciar com o sistema
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
+echo "PostgreSQL instalado e configurado com sucesso."
 
 # Instalar Visual Studio Code usando Snap
 sudo snap install code --classic
+echo "Visual Studio Code instalado com sucesso."
 
 # Instalar DBeaver Community usando Snap
 sudo snap install dbeaver-ce
+echo "DBeaver Community instalado com sucesso."
 
 # Baixar IntelliJ IDEA Community Edition
 IDEA_VERSION="2024.1.6"
@@ -67,12 +72,14 @@ TEMP_DIR="/tmp"
 
 # Fazer download do IntelliJ IDEA
 wget -O $TEMP_DIR/$IDEA_TAR $IDEA_URL
+echo "Download do IntelliJ IDEA concluído."
 
 # Criar diretório de instalação
 sudo mkdir -p $IDEA_INSTALL_DIR
 
 # Descompactar o IntelliJ IDEA
 sudo tar -xzf $TEMP_DIR/$IDEA_TAR -C $IDEA_INSTALL_DIR --strip-components=1
+echo "IntelliJ IDEA descompactado com sucesso."
 
 # Remover o arquivo compactado
 rm $TEMP_DIR/$IDEA_TAR
@@ -97,4 +104,7 @@ EOF
 sudo chmod +x /usr/local/bin/idea
 
 # Instalação concluída
-echo "Instalação e configuração concluídas com sucesso!"
+echo "IntelliJ IDEA instalado e configurado com sucesso."
+
+# Mensagem final de conclusão
+echo "Todas as instalações e configurações foram concluídas com sucesso!"
