@@ -2,9 +2,8 @@
 
 
 
-echo "Sou Gabriel Desenvolvedor Java"
-echo "Linux e uma maravilha "
-echo "Curta Bastante este script, adicione mais programas nele"
+echo "Sou Gabriel Desenvolvedor Java | Angular"
+echo "Proposisto desse script e para vocẽ que esta começando no linux a te ajudar a configurar ambiente de desenvolvimento java"
 echo "                                                       "
 echo "   (  )   (   )   )"
 echo "    )   )  )  (  ("
