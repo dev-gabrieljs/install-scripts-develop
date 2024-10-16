@@ -3,6 +3,7 @@
 
 
 echo "Sou Gabriel Desenvolvedor Java"
+echo "Linux e uma maravilha "
 echo "Curta Bastante este script, adicione mais programas nele"
 echo "                                                       "
 echo "   (  )   (   )   )"
@@ -69,6 +70,13 @@ git --version
 
 sleep 3
 
+# Instalar o Insomnia
+curl -1sLf \
+  'https://packages.konghq.com/public/insomnia/setup.deb.sh' \
+  | sudo -E distro=ubuntu codename=focal bash
+sudo apt-get install insomnia
+
+sleep 3
 
 # Instalar o Maven
 sudo apt install maven -y
