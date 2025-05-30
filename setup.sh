@@ -5,16 +5,22 @@
 echo "Sou Gabriel Desenvolvedor Java | Angular"
 echo "Propósito desse script e para vocẽ que esta começando no linux a te ajudar a configurar ambiente de desenvolvimento java"
 echo "                                                       "
-echo "   (  )   (   )   )"
-echo "    )   )  )  (  ("
-echo "   (  (  (   )  ) )"
-echo "   ............."
-echo "   |           |"
-echo "   |           |"
-echo "   |___________|"
-echo "   |           |"
-echo "   |___________|"
-echo "   (___________)"
+#!/bin/bash
+
+echo ""
+echo " ██████╗   ██████╗         ██╗ █████╗ ██╗   ██╗ █████╗        (  )   (   )   )"
+echo " ██╔════╝  ██╔═══██╗       ██║██╔══██╗██║   ██║██╔══██╗         )   )  )  (  ("
+echo " ██║       ██║             ██║███████║██║   ██║███████║        (  (  (   )  ) )"
+echo " ██║  ███  ╚█████╗     ██  ██║██╔══██║╚██╗ ██╔╝██╔══██║        ............."
+echo " ██║   ██║  ╚═══██╗   ╚█████╔╝██║  ██║ ╚████╔╝ ██║  ██║        |           |"
+echo " ╚██████╔╝  ██████╔╝    ╚════╝ ╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝       |___________|"
+echo "                                                               |           |"
+echo "                                                               |___________|"
+echo "                                                               (___________)"
+echo ""
+
+
+
 
 
 sleep 5
